@@ -558,7 +558,7 @@ namespace PL
                 if (dr == DialogResult.OK)
                 {
                     string[] values = frm2.getText().Split(',');
-                    readInputLine(inp, values);
+                    inputStatementHelper(inp, values);
                 }
             }
             else
@@ -568,7 +568,7 @@ namespace PL
 
         }
 
-        private void readInputLine(List<Variable> inp, string[] values)
+        private void inputStatementHelper(List<Variable> inp, string[] values)
         {
             if(inp.Count != values.Length)
                 throw new SyntaxErrorException("Lacking inputted values");
