@@ -438,6 +438,7 @@ namespace PL
                     case "string":
                         type = 2;
                         string s = token.Lexeme;
+                        s = s.Replace("[SPACE]", " ");
                         s = s.Replace("\"", "");
                         s = s.Replace("[[]", "[");
                         s = s.Replace("[]]", "]");
@@ -567,7 +568,7 @@ namespace PL
             }
 
         }
-
+         
         private void inputStatementHelper(List<Variable> inp, string[] values)
         {
             if(inp.Count != values.Length)

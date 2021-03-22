@@ -79,12 +79,13 @@ namespace PL
         public static Regex float_lit = new Regex(@"^(\+|-)?[0-9]*[.][0-9]*$");
         public static Regex char_lit = new Regex(@"'.'");
         public static Regex bool_lit = new Regex(@"(^""TRUE""$)|(^""FALSE""$)");
+        public static Regex string_lit = new Regex(@"^"".*?""$");
+        public static Regex string_lit_inline = new Regex(@""".*?""");
 
         public static Regex INT = new Regex("^INT$"); 
         public static Regex FLOAT = new Regex("^FLOAT$");
         public static Regex CHAR = new Regex("^CHAR$");
         public static Regex BOOL = new Regex("^BOOL$");
-        public static Regex string_lit = new Regex(@"^"".*?""$");
         public static Regex identifier = new Regex(@"^[a-zA-Z_$][a-zA-Z_$0-9]*$");
         public static Regex identifierInLine = new Regex(@"[a-zA-Z_$][a-zA-Z_$0-9]*");
 

@@ -51,6 +51,12 @@ namespace PL
             statement = statement.Replace("NOT", "!");
 
             //pre-process the expressions to remove whitespace to avoid individual tokenizing
+            foreach(Match match in Pattern.string_lit_inline.Matches(statement))
+            {
+                String temp = match.Value.ToString();
+                temp = temp.Replace(" ", "[SPACE]");
+                statement = statement.Replace(match.Value.ToString(), temp);
+            }
             //NOT expressions e.g. NOT "TRUE", NOT NOT "TRUE"
             foreach (Match match in Pattern.NOTexpressions.Matches(statement))
             {
