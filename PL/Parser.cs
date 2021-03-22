@@ -438,11 +438,12 @@ namespace PL
                     case "string":
                         type = 2;
                         string s = token.Lexeme;
+                        s = s.Replace("\"", "");
                         s = s.Replace("[[]", "[");
                         s = s.Replace("[]]", "]");
-                        s = s.Replace("[#]", "#");
+                        s = s.Replace("[#]", "[hashtag]");
                         s = s.Replace("#", "\n");
-                        s = s.Replace("\"", "");
+                        s = s.Replace("[hashtag]", "#");
                         sb.Append(s);
                         break;
                     case "identifier":
@@ -455,13 +456,15 @@ namespace PL
                                 if(v.Type == "char")
                                 {
                                     sb.Append(v.Value[1]);
-                                    find = true;
+                                }else if(v.Type == "bool")
+                                {
+                                    sb.Append(v.Value.Replace("\"", ""));
                                 }
                                 else
                                 {
                                     sb.Append(v.Value);
-                                    find = true;
                                 }
+                                find = true;
                                 break;
                             }
                         }
