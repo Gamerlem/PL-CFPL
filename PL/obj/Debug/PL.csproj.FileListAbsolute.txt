@@ -1,0 +1,131 @@
+C:\Users\asus\source\repos\PL\PL\bin\Debug\PL.exe.config
+C:\Users\asus\source\repos\PL\PL\bin\Debug\PL.exe
+C:\Users\asus\source\repos\PL\PL\bin\Debug\PL.pdb
+C:\Users\asus\source\repos\PL\PL\obj\Debug\PL.csprojAssemblyReference.cache
+C:\Users\asus\source\repos\PL\PL\obj\Debug\PL.Form1.resources
+C:\Users\asus\source\repos\PL\PL\obj\Debug\PL.Properties.Resources.resources
+C:\Users\asus\source\repos\PL\PL\obj\Debug\PL.csproj.GenerateResource.cache
+C:\Users\asus\source\repos\PL\PL\obj\Debug\PL.csproj.CoreCompileInputs.cache
+C:\Users\asus\source\repos\PL\PL\obj\Debug\PL.exe
+C:\Users\asus\source\repos\PL\PL\obj\Debug\PL.pdb
+C:\Users\asus\source\repos\PL - Copy\PL\bin\Debug\PL.exe.config
+C:\Users\asus\source\repos\PL - Copy\PL\bin\Debug\PL.exe
+C:\Users\asus\source\repos\PL - Copy\PL\bin\Debug\PL.pdb
+C:\Users\asus\source\repos\PL - Copy\PL\obj\Debug\PL.csprojAssemblyReference.cache
+C:\Users\asus\source\repos\PL - Copy\PL\obj\Debug\PL.Form1.resources
+C:\Users\asus\source\repos\PL - Copy\PL\obj\Debug\PL.Properties.Resources.resources
+C:\Users\asus\source\repos\PL - Copy\PL\obj\Debug\PL.csproj.GenerateResource.cache
+C:\Users\asus\source\repos\PL - Copy\PL\obj\Debug\PL.csproj.CoreCompileInputs.cache
+C:\Users\asus\source\repos\PL - Copy\PL\obj\Debug\PL.exe
+C:\Users\asus\source\repos\PL - Copy\PL\obj\Debug\PL.pdb
+C:\Users\asus\source\repos\PL lacking expression mod\PL\bin\Debug\PL.exe.config
+C:\Users\asus\source\repos\PL lacking expression mod\PL\bin\Debug\PL.exe
+C:\Users\asus\source\repos\PL lacking expression mod\PL\bin\Debug\PL.pdb
+C:\Users\asus\source\repos\PL lacking expression mod\PL\obj\Debug\PL.csprojAssemblyReference.cache
+C:\Users\asus\source\repos\PL lacking expression mod\PL\obj\Debug\PL.Form1.resources
+C:\Users\asus\source\repos\PL lacking expression mod\PL\obj\Debug\PL.Properties.Resources.resources
+C:\Users\asus\source\repos\PL lacking expression mod\PL\obj\Debug\PL.csproj.GenerateResource.cache
+C:\Users\asus\source\repos\PL lacking expression mod\PL\obj\Debug\PL.csproj.CoreCompileInputs.cache
+C:\Users\asus\source\repos\PL lacking expression mod\PL\obj\Debug\PL.exe
+C:\Users\asus\source\repos\PL lacking expression mod\PL\obj\Debug\PL.pdb
+C:\Users\asus\source\repos\PL code here\PL\bin\Debug\PL.exe.config
+C:\Users\asus\source\repos\PL code here\PL\bin\Debug\PL.exe
+C:\Users\asus\source\repos\PL code here\PL\bin\Debug\PL.pdb
+C:\Users\asus\source\repos\PL code here\PL\obj\Debug\PL.csprojAssemblyReference.cache
+C:\Users\asus\source\repos\PL code here\PL\obj\Debug\PL.Form1.resources
+C:\Users\asus\source\repos\PL code here\PL\obj\Debug\PL.Properties.Resources.resources
+C:\Users\asus\source\repos\PL code here\PL\obj\Debug\PL.csproj.GenerateResource.cache
+C:\Users\asus\source\repos\PL code here\PL\obj\Debug\PL.csproj.CoreCompileInputs.cache
+C:\Users\asus\source\repos\PL code here\PL\obj\Debug\PL.exe
+C:\Users\asus\source\repos\PL code here\PL\obj\Debug\PL.pdb
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\PL code here\PL\bin\Debug\PL.exe.config
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\PL code here\PL\bin\Debug\PL.exe
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\PL code here\PL\bin\Debug\PL.pdb
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\PL code here\PL\obj\Debug\PL.csprojAssemblyReference.cache
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\PL code here\PL\obj\Debug\PL.Form1.resources
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\PL code here\PL\obj\Debug\PL.Properties.Resources.resources
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\PL code here\PL\obj\Debug\PL.csproj.GenerateResource.cache
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\PL code here\PL\obj\Debug\PL.csproj.CoreCompileInputs.cache
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\PL code here\PL\obj\Debug\PL.exe
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\PL code here\PL\obj\Debug\PL.pdb
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L\PL\bin\Debug\PL.exe.config
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L\PL\bin\Debug\PL.exe
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L\PL\bin\Debug\PL.pdb
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L\PL\obj\Debug\PL.csprojAssemblyReference.cache
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L\PL\obj\Debug\PL.Form1.resources
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L\PL\obj\Debug\PL.Properties.Resources.resources
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L\PL\obj\Debug\PL.csproj.GenerateResource.cache
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L\PL\obj\Debug\PL.csproj.CoreCompileInputs.cache
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L\PL\obj\Debug\PL.exe
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L\PL\obj\Debug\PL.pdb
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - Copy\PL\bin\Debug\PL.exe.config
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - Copy\PL\bin\Debug\PL.exe
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - Copy\PL\bin\Debug\PL.pdb
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - Copy\PL\obj\Debug\PL.csprojAssemblyReference.cache
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - Copy\PL\obj\Debug\PL.Form1.resources
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - Copy\PL\obj\Debug\PL.Properties.Resources.resources
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - Copy\PL\obj\Debug\PL.csproj.GenerateResource.cache
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - Copy\PL\obj\Debug\PL.csproj.CoreCompileInputs.cache
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - Copy\PL\obj\Debug\PL.exe
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - Copy\PL\obj\Debug\PL.pdb
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V1\PL\bin\Debug\PL.exe.config
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V1\PL\bin\Debug\PL.exe
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V1\PL\bin\Debug\PL.pdb
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V1\PL\obj\Debug\PL.csprojAssemblyReference.cache
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V1\PL\obj\Debug\PL.Form1.resources
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V1\PL\obj\Debug\PL.Properties.Resources.resources
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V1\PL\obj\Debug\PL.csproj.GenerateResource.cache
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V1\PL\obj\Debug\PL.csproj.CoreCompileInputs.cache
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V1\PL\obj\Debug\PL.exe
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V1\PL\obj\Debug\PL.pdb
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V1 - Copy\PL\bin\Debug\PL.exe.config
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V1 - Copy\PL\bin\Debug\PL.exe
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V1 - Copy\PL\bin\Debug\PL.pdb
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V1 - Copy\PL\obj\Debug\PL.csprojAssemblyReference.cache
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V1 - Copy\PL\obj\Debug\PL.Form1.resources
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V1 - Copy\PL\obj\Debug\PL.Properties.Resources.resources
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V1 - Copy\PL\obj\Debug\PL.csproj.GenerateResource.cache
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V1 - Copy\PL\obj\Debug\PL.csproj.CoreCompileInputs.cache
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V1 - Copy\PL\obj\Debug\PL.exe
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V1 - Copy\PL\obj\Debug\PL.pdb
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V2\PL\bin\Debug\PL.exe.config
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V2\PL\bin\Debug\PL.exe
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V2\PL\bin\Debug\PL.pdb
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V2\PL\obj\Debug\PL.csprojAssemblyReference.cache
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V2\PL\obj\Debug\PL.Form1.resources
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V2\PL\obj\Debug\PL.Properties.Resources.resources
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V2\PL\obj\Debug\PL.csproj.GenerateResource.cache
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V2\PL\obj\Debug\PL.csproj.CoreCompileInputs.cache
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V2\PL\obj\Debug\PL.exe
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V2\PL\obj\Debug\PL.pdb
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V2 - Copy\PL\bin\Debug\PL.exe.config
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V2 - Copy\PL\bin\Debug\PL.exe
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V2 - Copy\PL\bin\Debug\PL.pdb
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V2 - Copy\PL\obj\Debug\PL.csprojAssemblyReference.cache
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V2 - Copy\PL\obj\Debug\PL.Form1.resources
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V2 - Copy\PL\obj\Debug\PL.Properties.Resources.resources
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V2 - Copy\PL\obj\Debug\PL.csproj.GenerateResource.cache
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V2 - Copy\PL\obj\Debug\PL.csproj.CoreCompileInputs.cache
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V2 - Copy\PL\obj\Debug\PL.exe
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V2 - Copy\PL\obj\Debug\PL.pdb
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V3\PL\bin\Debug\PL.exe.config
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V3\PL\bin\Debug\PL.exe
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V3\PL\bin\Debug\PL.pdb
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V3\PL\obj\Debug\PL.csprojAssemblyReference.cache
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V3\PL\obj\Debug\PL.Form1.resources
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V3\PL\obj\Debug\PL.Properties.Resources.resources
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V3\PL\obj\Debug\PL.csproj.GenerateResource.cache
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V3\PL\obj\Debug\PL.csproj.CoreCompileInputs.cache
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V3\PL\obj\Debug\PL.exe
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL - 4L - V3\PL\obj\Debug\PL.pdb
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL-master\PL\bin\Debug\PL.exe.config
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL-master\PL\bin\Debug\PL.exe
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL-master\PL\bin\Debug\PL.pdb
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL-master\PL\obj\Debug\PL.csprojAssemblyReference.cache
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL-master\PL\obj\Debug\PL.Form1.resources
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL-master\PL\obj\Debug\PL.Properties.Resources.resources
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL-master\PL\obj\Debug\PL.csproj.GenerateResource.cache
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL-master\PL\obj\Debug\PL.csproj.CoreCompileInputs.cache
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL-master\PL\obj\Debug\PL.exe
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL-master\PL\obj\Debug\PL.pdb
+D:\Documents\My Files\School\College Files\Third Year\2\Programming Languages\CFPL\CFPL-master\PL\obj\Debug\PL.Form2.resources
