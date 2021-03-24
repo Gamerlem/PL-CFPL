@@ -956,6 +956,10 @@ namespace PL
                 {
                     ifStatement();
                 }
+                else if (current.Lexeme == "ELIF")
+                {
+                    throw new SyntaxErrorException("ELIF without IF");
+                }
                 else if (current.Lexeme == "ELSE")
                 {
                     throw new SyntaxErrorException("ELSE without IF");
@@ -990,6 +994,8 @@ namespace PL
                 flag = true;
             else if (current.Lexeme == "INPUT")
                 flag = true;
+            else if (current.Lexeme == "ELIF")
+                flag = true;
             return flag;
         }
         private void skipBlock()
@@ -1007,9 +1013,22 @@ namespace PL
                 {
                     if (line.Count != 2)
                         throw new SyntaxErrorException("Syntax Error in IF Statement skip");
+                    if (!checkPar(line[1].Lexeme))
+                        throw new SyntaxErrorException("Syntax Error in IF <statement>: missing parenthesis");
 
                     next_list();
                     skipBlock();
+
+                    while(peekNext() == "ELIF")
+                    {
+                        next_list();
+                        if (line.Count != 2)
+                            throw new SyntaxErrorException("Syntax Error in ELIF Statement skip");
+                        if (!checkPar(line[1].Lexeme))
+                            throw new SyntaxErrorException("Syntax Error in ELIF <statement>: missing parenthesis");
+                        next_list();
+                        skipBlock();
+                    }
 
                     if(peekNext() == "ELSE")
                     {
@@ -1024,7 +1043,12 @@ namespace PL
                             skipBlock();
                         }
                     }
-                }else if (current.Lexeme == "ELSE")
+                }
+                else if (current.Lexeme == "ELIF")
+                {
+                    throw new SyntaxErrorException("ELIF without IF skip");
+                }
+                else if (current.Lexeme == "ELSE")
                 {
                     throw new SyntaxErrorException("ELSE without IF skip");
                 }
@@ -1045,31 +1069,37 @@ namespace PL
                 throw new SyntaxErrorException("Syntax Error in IF Statement");
 
             string expression = line[1].Lexeme;
-            bool valid = expression.StartsWith("(") && expression.EndsWith(")");
-            if (!valid)
-                throw new SyntaxErrorException("Syntax Error in IF Statement");
+
+            if (!checkPar(expression))
+                throw new SyntaxErrorException("Syntax Error in IF <statement>: missing parenthesis");
 
             if (Pattern.BOOLexpressions.IsMatch(expression) || Pattern.BOOLsingle.IsMatch(expression))
             {
                 expression = evaluateExpression(line[1]);
-
                 if (expression == "\"TRUE\"")
                 {
                     //execute first block
                     next_list();
                     parseBlock();
-                    //skip the else block if it exist
+
+                    //skip all elif and else
+                    while (peekNext() == "ELIF")
+                    {
+                        next_list();
+                        if (line.Count != 2)
+                            throw new SyntaxErrorException("Syntax Error in ELIF Statement");
+                        if (!checkPar(line[1].Lexeme))
+                            throw new SyntaxErrorException("Syntax Error in ELIF <statement>: missing parenthesis");
+                        next_list();
+                        skipBlock();
+                    }
                     if (peekNext() == "ELSE")
                     {
                         next_list();
                         if (line.Count != 1)
                             throw new SyntaxErrorException("Syntax Error in ELSE Statement");
-
-                        if (line != null)
-                        {
-                            next_list();
-                            skipBlock();
-                        }
+                        next_list();
+                        skipBlock();
                     }
                 }
                 else if (expression == "\"FALSE\"")
@@ -1077,20 +1107,57 @@ namespace PL
                     //skip the first block
                     next_list();
                     skipBlock();
-                    
+
+                    //perform elif
+                    while (peekNext() == "ELIF")
+                    {
+                        next_list();
+                        if (line.Count != 2)
+                            throw new SyntaxErrorException("Syntax Error in ELIF Statement");
+                        if (!checkPar(line[1].Lexeme))
+                            throw new SyntaxErrorException("Syntax Error in ELIF <statement>: missing parenthesis");
+                        string c = evaluateExpression(line[1]);
+                        if (c == "\"TRUE\"")
+                        {
+                            //execute the elif
+                            next_list();
+                            parseBlock();
+
+                            //skip all elif and else
+                            while (peekNext() == "ELIF")
+                            {
+                                next_list();
+                                if (line.Count != 2)
+                                    throw new SyntaxErrorException("Syntax Error in ELIF Statement");
+                                if (!checkPar(line[1].Lexeme))
+                                    throw new SyntaxErrorException("Syntax Error in ELIF <statement>: missing parenthesis");
+                                next_list();
+                                skipBlock();
+                            }
+                            if (peekNext() == "ELSE")
+                            {
+                                next_list();
+                                if (line.Count != 1)
+                                    throw new SyntaxErrorException("Syntax Error in ELSE Statement");
+                                next_list();
+                                skipBlock();
+                            }
+                        }else if(c == "\"FALSE\"")
+                        {
+                            next_list();
+                            skipBlock();
+                        }
+                    }
+
                     //execute else block if it exist
                     if (peekNext() == "ELSE")
                     {
                         next_list();
                         if (line.Count != 1)
                             throw new SyntaxErrorException("Syntax Error in ELSE Statement");
-                        if (line != null)
-                        {
-                            next_list();
-                            parseBlock();
-                        }
+                        next_list();
+                        parseBlock();
                     }
-                    
                 }
                 else
                 {
@@ -1108,8 +1175,8 @@ namespace PL
                 throw new SyntaxErrorException("Syntax Error in WHILE Statement");
 
             string expression = line[1].Lexeme;
-            bool valid = expression.StartsWith("(") && expression.EndsWith(")");
-            if (!valid)
+
+            if (!checkPar(expression))
                 throw new SyntaxErrorException("Syntax Error in WHILE Statement");
 
             if (Pattern.BOOLexpressions.IsMatch(expression) || Pattern.BOOLsingle.IsMatch(expression))
@@ -1133,6 +1200,11 @@ namespace PL
             {
                 throw new SyntaxErrorException("Syntax Error in WHILE expression");
             }
+        }
+
+        private bool checkPar(string str)
+        {
+            return str.StartsWith("(") && str.EndsWith(")");
         }
     }
 }

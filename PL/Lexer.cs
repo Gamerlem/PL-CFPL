@@ -112,6 +112,7 @@ namespace PL
             statement = statement.Replace("IF", " IF ");
             statement = statement.Replace("ELSE", " ELSE ");
             statement = statement.Replace("WHILE", " WHILE ");
+            statement = statement.Replace("EL IF ", " ELIF ");
 
             statement = statement.Replace(" =  = ", "==");
             statement = statement.Replace("> = ", ">=");
