@@ -13,7 +13,7 @@ namespace PL
         {
             "VAR", "AS",
             "START", "OUTPUT", "STOP", "INPUT",
-            "IF","ELSE", "WHILE",
+            "IF","ELSE", "WHILE","ELIF",
         };
         
         public TypeAnalyzer() { }

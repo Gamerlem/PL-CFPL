@@ -50,13 +50,7 @@ namespace PL
             statement = statement.Replace("OR", "||");
             statement = statement.Replace("NOT", "!");
 
-            //pre-process the expressions to remove whitespace to avoid individual tokenizing
-            foreach(Match match in Pattern.string_lit_inline.Matches(statement))
-            {
-                String temp = match.Value.ToString();
-                temp = temp.Replace(" ", "[SPACE]");
-                statement = statement.Replace(match.Value.ToString(), temp);
-            }
+            
             //NOT expressions e.g. NOT "TRUE", NOT NOT "TRUE"
             foreach (Match match in Pattern.NOTexpressions.Matches(statement))
             {
@@ -85,7 +79,21 @@ namespace PL
 
             //add important whitespaces for tokenizing
             statement = AddWhitespaces(statement);
+
+            //pre-process the expressions to remove whitespace to avoid individual tokenizing
+            foreach (Match match in Pattern.string_lit_inline.Matches(statement))
+            {
+                String temp = match.Value.ToString();
+                temp = temp.Replace(" ", "[SPACE]");
+                statement = statement.Replace(match.Value.ToString(), temp);
+            }
+
             string[] tokens = statement.Split(new char[0], StringSplitOptions.RemoveEmptyEntries);
+            for(int i = 0; i<tokens.Length; i++)
+            {
+                tokens[i] = tokens[i].Replace("[SPACE]", " ");
+            }
+
             return tokens;
         }
 

@@ -37,6 +37,9 @@ namespace PL
             parseDeclaration();
             if(line!=null)
                 parseBlock();
+            next_list();
+            if (line != null)
+                throw new SyntaxErrorException("SYNTAX ERROR");
 
         }
         public List<string> Output
@@ -708,8 +711,8 @@ namespace PL
                 expression = expression.Replace(" > =", " >= ");
                 expression = expression.Replace("==", " == ");
                 expression = expression.Replace(" <  > ", " <> ");
-                expression = expression.Replace("(", "");
-                expression = expression.Replace(")", "");
+                expression = expression.Replace("(", " ( ");
+                expression = expression.Replace(")", " ) ");
 
                 expression = expression.Replace("&&", " && ");
                 expression = expression.Replace("||", " || ");
@@ -726,14 +729,24 @@ namespace PL
                 string res = "";
                 bool flag = false;
                 Queue<string> queue = new Queue<string>();
+                int openP = 0;
+                int closeP = 0;
 
 
                 foreach (string str in tokens)
                 {
                     //skip parenthesis
-                    if (str == "(" || str == ")")
+                    if (str == "(")
+                    {
+                        openP++;
                         continue;
-
+                    }
+                    if(str == ")")
+                    {
+                        closeP++;
+                        continue;
+                    }
+                        
                     if (Pattern.int_lit.IsMatch(str) || Pattern.float_lit.IsMatch(str))
                     {
                         input = 0;
@@ -822,8 +835,12 @@ namespace PL
                     if (state == 5)
                     {
                         break;
-                    }
-                        
+                    } 
+                }
+
+                if(openP != closeP)
+                {
+                    throw new SyntaxErrorException("mismatch pairing of open and close parenthesis in : "+ err.Lexeme);
                 }
 
                 //evaluate the boolean formed
@@ -895,14 +912,14 @@ namespace PL
             if(current != null)
             {
                 if (current.Lexeme != word)
-                    throw new SyntaxErrorException("Syntax Error 1 " + word + " " + current.Lineno + " " + current.Lexeme);
+                    throw new SyntaxErrorException("Syntax Error in : " + current.Lineno + " : " + current.Lexeme);
                 if (current.Lexeme == "START" || current.Lexeme == "STOP")
                     if (line.Count != 1)
-                        throw new SyntaxErrorException("Syntax Error 2");
+                        throw new SyntaxErrorException("Syntax Error in : " + current.Lineno + " : " + current.Lexeme);
             }
             else
             {
-                throw new SyntaxErrorException("Syntax Error 3");
+                throw new SyntaxErrorException("Syntax Error");
             }
         }
         private void getFirstToken()
@@ -1028,6 +1045,9 @@ namespace PL
                 throw new SyntaxErrorException("Syntax Error in IF Statement");
 
             string expression = line[1].Lexeme;
+            bool valid = expression.StartsWith("(") && expression.EndsWith(")");
+            if (!valid)
+                throw new SyntaxErrorException("Syntax Error in IF Statement");
 
             if (Pattern.BOOLexpressions.IsMatch(expression) || Pattern.BOOLsingle.IsMatch(expression))
             {
@@ -1057,6 +1077,7 @@ namespace PL
                     //skip the first block
                     next_list();
                     skipBlock();
+                    
                     //execute else block if it exist
                     if (peekNext() == "ELSE")
                     {
@@ -1069,6 +1090,7 @@ namespace PL
                             parseBlock();
                         }
                     }
+                    
                 }
                 else
                 {
@@ -1086,6 +1108,9 @@ namespace PL
                 throw new SyntaxErrorException("Syntax Error in WHILE Statement");
 
             string expression = line[1].Lexeme;
+            bool valid = expression.StartsWith("(") && expression.EndsWith(")");
+            if (!valid)
+                throw new SyntaxErrorException("Syntax Error in WHILE Statement");
 
             if (Pattern.BOOLexpressions.IsMatch(expression) || Pattern.BOOLsingle.IsMatch(expression))
             {
