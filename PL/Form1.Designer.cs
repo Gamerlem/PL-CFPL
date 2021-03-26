@@ -46,8 +46,7 @@ namespace PL
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(380, 445);
             this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "VAR xyz, abc=100 AS INT\nSTART\nxyz= ((abc *5)/10 + 10) * -1\n* xyz should have the " +
-    "value -60\nINPUT: xyz\nOUTPUT: “[[]” & xyz & “[]]”\nSTOP";
+            this.richTextBox1.Text = "";
             // 
             // richTextBox2
             // 

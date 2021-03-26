@@ -446,6 +446,7 @@ namespace PL
                         s = s.Replace("[[]", "[");
                         s = s.Replace("[]]", "]");
                         s = s.Replace("[#]", "[hashtag]");
+                        s = s.Replace("[&]", "&");
                         s = s.Replace("#", "\n");
                         s = s.Replace("[hashtag]", "#");
                         sb.Append(s);
@@ -684,6 +685,8 @@ namespace PL
                 }
             }
 
+            //throw new SyntaxErrorException(expression);
+
             //arithmetic expressions
             if (Pattern.arithmetic.IsMatch(expression))
             {
@@ -694,6 +697,9 @@ namespace PL
             //else if boolean expressions
             else if (Pattern.Strictexpression.IsMatch(expression) || Pattern.StrictNOTexpressions.IsMatch(expression) || Pattern.BOOLsingle.IsMatch(expression))
             {
+
+                //throw new SyntaxErrorException(expression);
+
                 //solve all arithmetic found in the line
                 foreach (Match match in Pattern.arithmeticInLine.Matches(expression))
                 {
@@ -731,10 +737,28 @@ namespace PL
                 Queue<string> queue = new Queue<string>();
                 int openP = 0;
                 int closeP = 0;
+                bool special = false;
+                string specialOPT = "";
 
 
-                foreach (string str in tokens)
+                //replace char to ascii
+                for (int i = 0; i < tokens.Length; i++)
                 {
+                    if (Pattern.char_lit.IsMatch(tokens[i]))
+                    {
+                        int ascii = tokens[i][1];
+                        tokens[i] = ascii.ToString();
+                    }
+                }
+                for (int i = 0; i < tokens.Length; i++)
+                {
+                    tokens[i] = tokens[i].Replace("\'", "");
+                }
+
+                for(int i = 0; i<tokens.Length; i++)
+                {
+                    string str = tokens[i];
+
                     //skip parenthesis
                     if (str == "(")
                     {
@@ -747,6 +771,7 @@ namespace PL
                         continue;
                     }
                         
+
                     if (Pattern.int_lit.IsMatch(str) || Pattern.float_lit.IsMatch(str))
                     {
                         input = 0;
@@ -798,12 +823,42 @@ namespace PL
                     }
                     else if(Pattern.boolOpt.IsMatch(str))
                     {
+                        /*
                         input = 1;
                         opt = str;
                         flag = true;
+                        */
+
+                        //erase
+                        if(str == "==" || str == "<>")
+                        {
+                            if (state == 3)
+                            {
+                                special = true;
+                                specialOPT = str;
+                                input = 2;
+                            }
+                            else
+                            {
+                                input = 1;
+                                opt = str;
+                                flag = true;
+                            }
+                        }
+                        else
+                        {
+                            input = 1;
+                            opt = str;
+                            flag = true;
+                        }
+
+
+
                     }
                     else if(Pattern.logOpt.IsMatch(str))
                     {
+
+                        
                         input = 2;
                         flag = false;
 
@@ -811,6 +866,8 @@ namespace PL
                             queue.Enqueue("AND");
                         else if (str == "||")
                             queue.Enqueue("OR");
+                        
+
                     }
                     else if(str == "\"TRUE\""|| str == "\"FALSE\"")
                     {
@@ -836,6 +893,40 @@ namespace PL
                     {
                         break;
                     } 
+
+                    //erase
+                    if(state == 3 && special)
+                    {
+                        //throw new SyntaxErrorException("sulod");
+                        string oppp = queue.Dequeue();
+                        string oppp1 = queue.Dequeue();
+                        if(specialOPT == "==")
+                        {
+                            if(oppp == oppp1)
+                            {
+                                queue.Enqueue("true");
+                            }
+                            else
+                            {
+                                queue.Enqueue("false");
+                            }
+                        }
+                        else
+                        {
+                            if (oppp != oppp1)
+                            {
+                                queue.Enqueue("true");
+                            }
+                            else
+                            {
+                                queue.Enqueue("false");
+                            }
+                        }
+                        special = false;
+                    }
+
+
+
                 }
 
                 if(openP != closeP)
@@ -868,13 +959,16 @@ namespace PL
                 }
                 else
                 {
-                    throw new SyntaxErrorException(""+err.Lineno+": error: Invalid expression: " + err.Lexeme);
+                    throw new SyntaxErrorException(""+err.Lineno+": error: Invalid expression1: " + err.Lexeme);
                 }
+
+
+
 
             }
             else
             {
-                throw new SyntaxErrorException("" + err.Lineno + ": error: Invalid expression: " + err.Lexeme);
+                throw new SyntaxErrorException("" + err.Lineno + ": error: Invalid expression111: " + err.Lexeme);
             }
             
             return expression;
